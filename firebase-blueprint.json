@@ -1,0 +1,125 @@
+{
+  "entities": {
+    "site_plan": {
+      "title": "SitePlan",
+      "description": "Geospatial site plan representation for lands commission and MMDA tracking",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier of the plan"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Generation timestamp"
+        },
+        "ownerName": {
+          "type": "string",
+          "description": "The property owner full name"
+        },
+        "contactDetails": {
+          "type": "string",
+          "description": "Owner contact details"
+        },
+        "region": {
+          "type": "string",
+          "description": "Ghana administrative region"
+        },
+        "district": {
+          "type": "string",
+          "description": "Ghana MMDA district"
+        },
+        "locality": {
+          "type": "string",
+          "description": "Locality/town name"
+        },
+        "streetName": {
+          "type": "string",
+          "description": "Street or access road name"
+        },
+        "ghanaPostGPS": {
+          "type": "string",
+          "description": "GhanaPostGPS digital address"
+        },
+        "acreage": {
+          "type": "number",
+          "description": "Property size in Acres"
+        },
+        "hectares": {
+          "type": "number",
+          "description": "Property size in Hectares"
+        },
+        "plotShape": {
+          "type": "string",
+          "enum": ["square", "rectangle", "irregular"],
+          "description": "Plot geometry type"
+        },
+        "scale": {
+          "type": "string",
+          "description": "Map representation scale"
+        },
+        "lat": {
+          "type": "number",
+          "description": "Latitude coordinate"
+        },
+        "lng": {
+          "type": "number",
+          "description": "Longitude coordinate"
+        },
+        "nearbyLandmark": {
+          "type": "string",
+          "description": "Nearest prominent physical landmark"
+        },
+        "accessPathType": {
+          "type": "string",
+          "description": "Class of street access path"
+        },
+        "cadastralSector": {
+          "type": "string",
+          "description": "Lands commission cadastral classification"
+        },
+        "surveyZone": {
+          "type": "string",
+          "description": "Lands commission survey zone"
+        },
+        "userId": {
+          "type": "string",
+          "description": "Owner user authenticated id"
+        }
+      },
+      "required": ["id", "createdAt", "ownerName", "region", "district", "locality", "ghanaPostGPS", "acreage", "plotShape", "userId"]
+    },
+    "system_stats": {
+      "title": "SystemStats",
+      "description": "Global statistics and real-time counter metrics",
+      "type": "object",
+      "properties": {
+        "totalPlans": {
+          "type": "integer",
+          "description": "Total number of plans ever generated across the platform"
+        },
+        "totalAcreage": {
+          "type": "number",
+          "description": "Total mapped acreage across all plans"
+        },
+        "lastGeneratedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Most recent generation timestamp"
+        }
+      },
+      "required": ["totalPlans", "totalAcreage", "lastGeneratedAt"]
+    }
+  },
+  "firestore": {
+    "/site_plans/{planId}": {
+      "schema": "site_plan",
+      "description": "Primary storage of lands site plans partitionable by user ID"
+    },
+    "/stats/system": {
+      "schema": "system_stats",
+      "description": "Static singleton for live system stats tracking"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "type": "FeatureCollection",
+  "name": "Planning_Sectors_Sample",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { 
+        "name": "East Legon Sector 1", 
+        "district": "Ayawaso West Municipal",
+        "sector_code": "EL-S1",
+        "zoning": "Residential"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[ -0.20, 5.62 ], [ -0.17, 5.62 ], [ -0.17, 5.65 ], [ -0.20, 5.65 ], [ -0.20, 5.62 ]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { 
+        "name": "KMA Central Sector", 
+        "district": "Kumasi Metropolitan",
+        "sector_code": "KMA-C1",
+        "zoning": "Commercial"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[ -1.62, 6.68 ], [ -1.58, 6.68 ], [ -1.58, 6.72 ], [ -1.62, 6.72 ], [ -1.62, 6.68 ]]]
+      }
+    }
+  ]
+}

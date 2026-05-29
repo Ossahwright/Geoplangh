@@ -1,0 +1,6 @@
+{
+  "name": "GeoPlan GH",
+  "description": "Structure-Level Ghanaian GeoIntelligence Infrastructure. Generates deterministic, building-aware spatial distributions for GhanaPostGPS codes with engineering-grade site plan exports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

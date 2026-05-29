@@ -1,0 +1,83 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Global safety net catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // --- REUSABLE SECURITY PRIMITIVES ---
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isOwner(resourceData) {
+      return resourceData.userId == request.auth.uid;
+    }
+
+    // --- SITE PLAN SCHEMA VALIDATORS ---
+    function isValidSitePlan(data) {
+      return data.id is string && data.id.size() <= 128
+        && data.ownerName is string && data.ownerName.size() <= 200
+        && data.region is string && data.region.size() <= 100
+        && data.district is string && data.district.size() <= 100
+        && data.locality is string && data.locality.size() <= 100
+        && data.ghanaPostGPS is string && data.ghanaPostGPS.size() <= 50
+        && data.plotShape in ['square', 'rectangle', 'irregular']
+        && data.acreage is number && data.acreage > 0
+        && data.userId is string && data.userId == request.auth.uid;
+    }
+
+    // --- SYSTEM STATS SCHEMA VALIDATORS ---
+    function isValidSystemStats(data) {
+      return data.totalPlans is int && data.totalPlans >= 0
+        && data.totalAcreage is number && data.totalAcreage >= 0
+        && data.lastGeneratedAt is string;
+    }
+
+    // --- SECURITY RULE MODULES ---
+
+    // Collection: Site Plans
+    match /site_plans/{planId} {
+      allow get: if isSignedIn() && isOwner(existing());
+      allow list: if isSignedIn() && existing().userId == request.auth.uid;
+      
+      allow create: if isSignedIn() 
+        && isValidId(planId) 
+        && incoming().id == planId 
+        && isValidSitePlan(incoming()) 
+        && incoming().createdAt == request.time;
+        
+      allow update: if isSignedIn() 
+        && isValidId(planId) 
+        && isOwner(existing()) 
+        && isValidSitePlan(incoming()) 
+        && incoming().createdAt == existing().createdAt;
+        
+      allow delete: if isSignedIn() 
+        && isValidId(planId) 
+        && isOwner(existing());
+    }
+
+    // Collection: System Stats (Singleton document)
+    match /stats/{docId} {
+      allow get: if isSignedIn();
+      allow write: if isSignedIn() 
+        && docId == 'system' 
+        && isValidSystemStats(incoming());
+    }
+  }
+}

@@ -1,0 +1,3134 @@
+[
+  {
+    "name": "Adansi",
+    "aliases": [
+      "Adansi"
+    ],
+    "district": "Adansi North",
+    "streets": [
+      "Adansi High Street",
+      "Adansi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Adansi",
+    "aliases": [
+      "Adansi"
+    ],
+    "district": "Adansi South",
+    "streets": [
+      "Adansi High Street",
+      "Adansi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Bosome Freho",
+    "aliases": [
+      "Bosome Freho"
+    ],
+    "district": "Bosome Freho",
+    "streets": [
+      "Bosome Freho High Street",
+      "Bosome Freho Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Adansi Asokwa",
+    "aliases": [
+      "Adansi Asokwa"
+    ],
+    "district": "Adansi Asokwa",
+    "streets": [
+      "Adansi Asokwa High Street",
+      "Adansi Asokwa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Offinso",
+    "aliases": [
+      "Offinso"
+    ],
+    "district": "Offinso North",
+    "streets": [
+      "Offinso High Street",
+      "Offinso Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Offinso",
+    "aliases": [
+      "Offinso"
+    ],
+    "district": "Offinso South",
+    "streets": [
+      "Offinso High Street",
+      "Offinso Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ahafo Ano South",
+    "aliases": [
+      "Ahafo Ano South"
+    ],
+    "district": "Ahafo Ano South East",
+    "streets": [
+      "Ahafo Ano South High Street",
+      "Ahafo Ano South Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Asante Akim",
+    "aliases": [
+      "Asante Akim"
+    ],
+    "district": "Asante Akim South",
+    "streets": [
+      "Asante Akim High Street",
+      "Asante Akim Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Akrofuom",
+    "aliases": [
+      "Akrofuom"
+    ],
+    "district": "Akrofuom",
+    "streets": [
+      "Akrofuom High Street",
+      "Akrofuom Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Afigya Kwabre",
+    "aliases": [
+      "Afigya Kwabre"
+    ],
+    "district": "Afigya Kwabre North",
+    "streets": [
+      "Afigya Kwabre High Street",
+      "Afigya Kwabre Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Amansie",
+    "aliases": [
+      "Amansie"
+    ],
+    "district": "Amansie South",
+    "streets": [
+      "Amansie High Street",
+      "Amansie Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Asokwa",
+    "aliases": [
+      "Asokwa"
+    ],
+    "district": "Asokwa",
+    "streets": [
+      "Asokwa High Street",
+      "Asokwa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Atwima Nwabiagya",
+    "aliases": [
+      "Atwima Nwabiagya"
+    ],
+    "district": "Atwima Nwabiagya North",
+    "streets": [
+      "Atwima Nwabiagya High Street",
+      "Atwima Nwabiagya Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Bekwai",
+    "aliases": [
+      "Bekwai"
+    ],
+    "district": "Bekwai",
+    "streets": [
+      "Bekwai High Street",
+      "Bekwai Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Asante Akim",
+    "aliases": [
+      "Asante Akim"
+    ],
+    "district": "Asante Akim Central",
+    "streets": [
+      "Asante Akim High Street",
+      "Asante Akim Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Kwabre",
+    "aliases": [
+      "Kwabre"
+    ],
+    "district": "Kwabre East",
+    "streets": [
+      "Kwabre High Street",
+      "Kwabre Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ejisu",
+    "aliases": [
+      "Ejisu"
+    ],
+    "district": "Ejisu",
+    "streets": [
+      "Ejisu High Street",
+      "Ejisu Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Afigya Kwabre",
+    "aliases": [
+      "Afigya Kwabre"
+    ],
+    "district": "Afigya Kwabre",
+    "streets": [
+      "Afigya Kwabre High Street",
+      "Afigya Kwabre Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Atwima Kwanwoma",
+    "aliases": [
+      "Atwima Kwanwoma"
+    ],
+    "district": "Atwima Kwanwoma",
+    "streets": [
+      "Atwima Kwanwoma High Street",
+      "Atwima Kwanwoma Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Atwima Nwabiagya",
+    "aliases": [
+      "Atwima Nwabiagya"
+    ],
+    "district": "Atwima Nwabiagya",
+    "streets": [
+      "Atwima Nwabiagya High Street",
+      "Atwima Nwabiagya Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Atwima Mponua",
+    "aliases": [
+      "Atwima Mponua"
+    ],
+    "district": "Atwima Mponua",
+    "streets": [
+      "Atwima Mponua High Street",
+      "Atwima Mponua Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ejura-Sekyedumase",
+    "aliases": [
+      "Ejura-Sekyedumase"
+    ],
+    "district": "Ejura-Sekyedumase",
+    "streets": [
+      "Ejura-Sekyedumase High Street",
+      "Ejura-Sekyedumase Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Kumasi",
+    "aliases": [
+      "Kumasi"
+    ],
+    "district": "Kumasi",
+    "streets": [
+      "Kumasi High Street",
+      "Kumasi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Kwadaso",
+    "aliases": [
+      "Kwadaso"
+    ],
+    "district": "Kwadaso",
+    "streets": [
+      "Kwadaso High Street",
+      "Kwadaso Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Juaben",
+    "aliases": [
+      "Juaben"
+    ],
+    "district": "Juaben",
+    "streets": [
+      "Juaben High Street",
+      "Juaben Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Mampong",
+    "aliases": [
+      "Mampong"
+    ],
+    "district": "Mampong",
+    "streets": [
+      "Mampong High Street",
+      "Mampong Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Asante Akim",
+    "aliases": [
+      "Asante Akim"
+    ],
+    "district": "Asante Akim North",
+    "streets": [
+      "Asante Akim High Street",
+      "Asante Akim Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Obuasi",
+    "aliases": [
+      "Obuasi"
+    ],
+    "district": "Obuasi",
+    "streets": [
+      "Obuasi High Street",
+      "Obuasi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Obuasi",
+    "aliases": [
+      "Obuasi"
+    ],
+    "district": "Obuasi East",
+    "streets": [
+      "Obuasi High Street",
+      "Obuasi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Oforikrom",
+    "aliases": [
+      "Oforikrom"
+    ],
+    "district": "Oforikrom",
+    "streets": [
+      "Oforikrom High Street",
+      "Oforikrom Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Old Tafo",
+    "aliases": [
+      "Old Tafo"
+    ],
+    "district": "Old Tafo",
+    "streets": [
+      "Old Tafo High Street",
+      "Old Tafo Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Sekyere Afram Plains",
+    "aliases": [
+      "Sekyere Afram Plains"
+    ],
+    "district": "Sekyere Afram Plains",
+    "streets": [
+      "Sekyere Afram Plains High Street",
+      "Sekyere Afram Plains Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Sekyere",
+    "aliases": [
+      "Sekyere"
+    ],
+    "district": "Sekyere Central",
+    "streets": [
+      "Sekyere High Street",
+      "Sekyere Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Sekyere",
+    "aliases": [
+      "Sekyere"
+    ],
+    "district": "Sekyere East",
+    "streets": [
+      "Sekyere High Street",
+      "Sekyere Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Asokore Mampong",
+    "aliases": [
+      "Asokore Mampong"
+    ],
+    "district": "Asokore Mampong",
+    "streets": [
+      "Asokore Mampong High Street",
+      "Asokore Mampong Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Suame",
+    "aliases": [
+      "Suame"
+    ],
+    "district": "Suame",
+    "streets": [
+      "Suame High Street",
+      "Suame Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "BOSOMTWE",
+    "aliases": [
+      "BOSOMTWE"
+    ],
+    "district": "BOSOMTWE",
+    "streets": [
+      "BOSOMTWE High Street",
+      "BOSOMTWE Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Sekyere Kumawu",
+    "aliases": [
+      "Sekyere Kumawu"
+    ],
+    "district": "Sekyere Kumawu",
+    "streets": [
+      "Sekyere Kumawu High Street",
+      "Sekyere Kumawu Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Amansie",
+    "aliases": [
+      "Amansie"
+    ],
+    "district": "Amansie Central",
+    "streets": [
+      "Amansie High Street",
+      "Amansie Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Amansie",
+    "aliases": [
+      "Amansie"
+    ],
+    "district": "Amansie West",
+    "streets": [
+      "Amansie High Street",
+      "Amansie Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ahafo Ano",
+    "aliases": [
+      "Ahafo Ano"
+    ],
+    "district": "Ahafo Ano North",
+    "streets": [
+      "Ahafo Ano High Street",
+      "Ahafo Ano Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ahafo Ano South",
+    "aliases": [
+      "Ahafo Ano South"
+    ],
+    "district": "Ahafo Ano South West",
+    "streets": [
+      "Ahafo Ano South High Street",
+      "Ahafo Ano South Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Sekyere",
+    "aliases": [
+      "Sekyere"
+    ],
+    "district": "Sekyere South",
+    "streets": [
+      "Sekyere High Street",
+      "Sekyere Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Banda",
+    "aliases": [
+      "Banda"
+    ],
+    "district": "Banda",
+    "streets": [
+      "Banda High Street",
+      "Banda Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Berekum",
+    "aliases": [
+      "Berekum"
+    ],
+    "district": "Berekum East",
+    "streets": [
+      "Berekum High Street",
+      "Berekum Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Berekum",
+    "aliases": [
+      "Berekum"
+    ],
+    "district": "Berekum West",
+    "streets": [
+      "Berekum High Street",
+      "Berekum Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Dormaa",
+    "aliases": [
+      "Dormaa"
+    ],
+    "district": "Dormaa Central",
+    "streets": [
+      "Dormaa High Street",
+      "Dormaa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Dormaa",
+    "aliases": [
+      "Dormaa"
+    ],
+    "district": "Dormaa East",
+    "streets": [
+      "Dormaa High Street",
+      "Dormaa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Dormaa",
+    "aliases": [
+      "Dormaa"
+    ],
+    "district": "Dormaa West",
+    "streets": [
+      "Dormaa High Street",
+      "Dormaa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Jaman",
+    "aliases": [
+      "Jaman"
+    ],
+    "district": "Jaman South",
+    "streets": [
+      "Jaman High Street",
+      "Jaman Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Jaman",
+    "aliases": [
+      "Jaman"
+    ],
+    "district": "Jaman North",
+    "streets": [
+      "Jaman High Street",
+      "Jaman Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Sunyani",
+    "aliases": [
+      "Sunyani"
+    ],
+    "district": "Sunyani",
+    "streets": [
+      "Sunyani High Street",
+      "Sunyani Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Wenchi",
+    "aliases": [
+      "Wenchi"
+    ],
+    "district": "Wenchi",
+    "streets": [
+      "Wenchi High Street",
+      "Wenchi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Sunyani",
+    "aliases": [
+      "Sunyani"
+    ],
+    "district": "Sunyani West",
+    "streets": [
+      "Sunyani High Street",
+      "Sunyani Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Tain",
+    "aliases": [
+      "Tain"
+    ],
+    "district": "Tain",
+    "streets": [
+      "Tain High Street",
+      "Tain Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Abura Asebu Kwamankese",
+    "aliases": [
+      "Abura Asebu Kwamankese"
+    ],
+    "district": "Abura Asebu Kwamankese",
+    "streets": [
+      "Abura Asebu Kwamankese High Street",
+      "Abura Asebu Kwamankese Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Asikuma / Odoben / Brakwa",
+    "aliases": [
+      "Asikuma / Odoben / Brakwa"
+    ],
+    "district": "Asikuma",
+    "streets": [
+      "Asikuma / Odoben / Brakwa High Street",
+      "Asikuma / Odoben / Brakwa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Cape Coast",
+    "aliases": [
+      "Cape Coast"
+    ],
+    "district": "Cape Coast",
+    "streets": [
+      "Cape Coast High Street",
+      "Cape Coast Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Effutu",
+    "aliases": [
+      "Effutu"
+    ],
+    "district": "Effutu",
+    "streets": [
+      "Effutu High Street",
+      "Effutu Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ekumfi",
+    "aliases": [
+      "Ekumfi"
+    ],
+    "district": "Ekumfi",
+    "streets": [
+      "Ekumfi High Street",
+      "Ekumfi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Gomoa",
+    "aliases": [
+      "Gomoa"
+    ],
+    "district": "Gomoa East",
+    "streets": [
+      "Gomoa High Street",
+      "Gomoa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Hemang Lower Denkyira",
+    "aliases": [
+      "Hemang Lower Denkyira"
+    ],
+    "district": "Hemang Lower Denkyira",
+    "streets": [
+      "Hemang Lower Denkyira High Street",
+      "Hemang Lower Denkyira Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Gomoa",
+    "aliases": [
+      "Gomoa"
+    ],
+    "district": "Gomoa West",
+    "streets": [
+      "Gomoa High Street",
+      "Gomoa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ajumako Enyan Esiam",
+    "aliases": [
+      "Ajumako Enyan Esiam"
+    ],
+    "district": "Ajumako Enyan Esiam",
+    "streets": [
+      "Ajumako Enyan Esiam High Street",
+      "Ajumako Enyan Esiam Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Komenda Edina Eguafo",
+    "aliases": [
+      "Komenda Edina Eguafo"
+    ],
+    "district": "Komenda Edina Eguafo",
+    "streets": [
+      "Komenda Edina Eguafo High Street",
+      "Komenda Edina Eguafo Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Gomoa",
+    "aliases": [
+      "Gomoa"
+    ],
+    "district": "Gomoa Central",
+    "streets": [
+      "Gomoa High Street",
+      "Gomoa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Mfantseman",
+    "aliases": [
+      "Mfantseman"
+    ],
+    "district": "Mfantseman",
+    "streets": [
+      "Mfantseman High Street",
+      "Mfantseman Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Assin",
+    "aliases": [
+      "Assin"
+    ],
+    "district": "Assin Central",
+    "streets": [
+      "Assin High Street",
+      "Assin Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Agona",
+    "aliases": [
+      "Agona"
+    ],
+    "district": "Agona West",
+    "streets": [
+      "Agona High Street",
+      "Agona Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Agona",
+    "aliases": [
+      "Agona"
+    ],
+    "district": "Agona East",
+    "streets": [
+      "Agona High Street",
+      "Agona Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Assin",
+    "aliases": [
+      "Assin"
+    ],
+    "district": "Assin North",
+    "streets": [
+      "Assin High Street",
+      "Assin Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Assin",
+    "aliases": [
+      "Assin"
+    ],
+    "district": "Assin South",
+    "streets": [
+      "Assin High Street",
+      "Assin Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Twifo Ati-Morkwa",
+    "aliases": [
+      "Twifo Ati-Morkwa"
+    ],
+    "district": "Twifo Ati-Morkwa",
+    "streets": [
+      "Twifo Ati-Morkwa High Street",
+      "Twifo Ati-Morkwa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Upper Denkyira",
+    "aliases": [
+      "Upper Denkyira"
+    ],
+    "district": "Upper Denkyira East",
+    "streets": [
+      "Upper Denkyira High Street",
+      "Upper Denkyira Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Upper Denkyira",
+    "aliases": [
+      "Upper Denkyira"
+    ],
+    "district": "Upper Denkyira West",
+    "streets": [
+      "Upper Denkyira High Street",
+      "Upper Denkyira Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Awutu Senya",
+    "aliases": [
+      "Awutu Senya"
+    ],
+    "district": "Awutu Senya West",
+    "streets": [
+      "Awutu Senya High Street",
+      "Awutu Senya Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Awutu Senya",
+    "aliases": [
+      "Awutu Senya"
+    ],
+    "district": "Awutu Senya East",
+    "streets": [
+      "Awutu Senya High Street",
+      "Awutu Senya Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Akuapem",
+    "aliases": [
+      "Akuapem"
+    ],
+    "district": "Akuapem North",
+    "streets": [
+      "Akuapem High Street",
+      "Akuapem Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Akuapem",
+    "aliases": [
+      "Akuapem"
+    ],
+    "district": "Akuapem South",
+    "streets": [
+      "Akuapem High Street",
+      "Akuapem Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Abuakwa",
+    "aliases": [
+      "Abuakwa"
+    ],
+    "district": "Abuakwa North",
+    "streets": [
+      "Abuakwa High Street",
+      "Abuakwa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Abuakwa",
+    "aliases": [
+      "Abuakwa"
+    ],
+    "district": "Abuakwa South",
+    "streets": [
+      "Abuakwa High Street",
+      "Abuakwa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Fanteakwa",
+    "aliases": [
+      "Fanteakwa"
+    ],
+    "district": "Fanteakwa South",
+    "streets": [
+      "Fanteakwa High Street",
+      "Fanteakwa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "New Juaben",
+    "aliases": [
+      "New Juaben"
+    ],
+    "district": "New Juaben North",
+    "streets": [
+      "New Juaben High Street",
+      "New Juaben Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Asene Manso Akroso",
+    "aliases": [
+      "Asene Manso Akroso"
+    ],
+    "district": "Asene Manso Akroso",
+    "streets": [
+      "Asene Manso Akroso High Street",
+      "Asene Manso Akroso Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Atiwa",
+    "aliases": [
+      "Atiwa"
+    ],
+    "district": "Atiwa East",
+    "streets": [
+      "Atiwa High Street",
+      "Atiwa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Asuogyaman",
+    "aliases": [
+      "Asuogyaman"
+    ],
+    "district": "Asuogyaman",
+    "streets": [
+      "Asuogyaman High Street",
+      "Asuogyaman Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Birim",
+    "aliases": [
+      "Birim"
+    ],
+    "district": "Birim Central",
+    "streets": [
+      "Birim High Street",
+      "Birim Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Achiase",
+    "aliases": [
+      "Achiase"
+    ],
+    "district": "Achiase",
+    "streets": [
+      "Achiase High Street",
+      "Achiase Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Denkyembour",
+    "aliases": [
+      "Denkyembour"
+    ],
+    "district": "Denkyembour",
+    "streets": [
+      "Denkyembour High Street",
+      "Denkyembour Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Fanteakwa",
+    "aliases": [
+      "Fanteakwa"
+    ],
+    "district": "Fanteakwa North",
+    "streets": [
+      "Fanteakwa High Street",
+      "Fanteakwa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Nsawam Adoagyiri",
+    "aliases": [
+      "Nsawam Adoagyiri"
+    ],
+    "district": "Nsawam Adoagyiri",
+    "streets": [
+      "Nsawam Adoagyiri High Street",
+      "Nsawam Adoagyiri Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Kwahu",
+    "aliases": [
+      "Kwahu"
+    ],
+    "district": "Kwahu East",
+    "streets": [
+      "Kwahu High Street",
+      "Kwahu Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Kwahu",
+    "aliases": [
+      "Kwahu"
+    ],
+    "district": "Kwahu South",
+    "streets": [
+      "Kwahu High Street",
+      "Kwahu Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Kwahu",
+    "aliases": [
+      "Kwahu"
+    ],
+    "district": "Kwahu West",
+    "streets": [
+      "Kwahu High Street",
+      "Kwahu Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Kwaebibirem",
+    "aliases": [
+      "Kwaebibirem"
+    ],
+    "district": "Kwaebibirem",
+    "streets": [
+      "Kwaebibirem High Street",
+      "Kwaebibirem Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Lower Manya Krobo",
+    "aliases": [
+      "Lower Manya Krobo"
+    ],
+    "district": "Lower Manya Krobo",
+    "streets": [
+      "Lower Manya Krobo High Street",
+      "Lower Manya Krobo Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Akyemansa",
+    "aliases": [
+      "Akyemansa"
+    ],
+    "district": "Akyemansa",
+    "streets": [
+      "Akyemansa High Street",
+      "Akyemansa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "New Juaben",
+    "aliases": [
+      "New Juaben"
+    ],
+    "district": "New Juaben South",
+    "streets": [
+      "New Juaben High Street",
+      "New Juaben Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ayensuano",
+    "aliases": [
+      "Ayensuano"
+    ],
+    "district": "Ayensuano",
+    "streets": [
+      "Ayensuano High Street",
+      "Ayensuano Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Kwahu Afram Plains",
+    "aliases": [
+      "Kwahu Afram Plains"
+    ],
+    "district": "Kwahu Afram Plains North",
+    "streets": [
+      "Kwahu Afram Plains High Street",
+      "Kwahu Afram Plains Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Kwahu Afram Plains",
+    "aliases": [
+      "Kwahu Afram Plains"
+    ],
+    "district": "Kwahu Afram Plains South",
+    "streets": [
+      "Kwahu Afram Plains High Street",
+      "Kwahu Afram Plains Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Okere",
+    "aliases": [
+      "Okere"
+    ],
+    "district": "Okere",
+    "streets": [
+      "Okere High Street",
+      "Okere Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Suhum",
+    "aliases": [
+      "Suhum"
+    ],
+    "district": "Suhum",
+    "streets": [
+      "Suhum High Street",
+      "Suhum Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Atiwa",
+    "aliases": [
+      "Atiwa"
+    ],
+    "district": "Atiwa West",
+    "streets": [
+      "Atiwa High Street",
+      "Atiwa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Upper Manya Krobo",
+    "aliases": [
+      "Upper Manya Krobo"
+    ],
+    "district": "Upper Manya Krobo",
+    "streets": [
+      "Upper Manya Krobo High Street",
+      "Upper Manya Krobo Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Upper West Akim",
+    "aliases": [
+      "Upper West Akim"
+    ],
+    "district": "Upper West Akim",
+    "streets": [
+      "Upper West Akim High Street",
+      "Upper West Akim Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "West Akim",
+    "aliases": [
+      "West Akim"
+    ],
+    "district": "West Akim",
+    "streets": [
+      "West Akim High Street",
+      "West Akim Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Birim",
+    "aliases": [
+      "Birim"
+    ],
+    "district": "Birim North",
+    "streets": [
+      "Birim High Street",
+      "Birim Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Yilo Krobo",
+    "aliases": [
+      "Yilo Krobo"
+    ],
+    "district": "Yilo Krobo",
+    "streets": [
+      "Yilo Krobo High Street",
+      "Yilo Krobo Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Birim",
+    "aliases": [
+      "Birim"
+    ],
+    "district": "Birim South",
+    "streets": [
+      "Birim High Street",
+      "Birim Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ayawaso",
+    "aliases": [
+      "Ayawaso"
+    ],
+    "district": "Ayawaso Central",
+    "streets": [
+      "Ayawaso High Street",
+      "Ayawaso Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ayawaso",
+    "aliases": [
+      "Ayawaso"
+    ],
+    "district": "Ayawaso North",
+    "streets": [
+      "Ayawaso High Street",
+      "Ayawaso Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ayawaso",
+    "aliases": [
+      "Ayawaso"
+    ],
+    "district": "Ayawaso West",
+    "streets": [
+      "Ayawaso High Street",
+      "Ayawaso Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Krowor",
+    "aliases": [
+      "Krowor"
+    ],
+    "district": "Krowor",
+    "streets": [
+      "Krowor High Street",
+      "Krowor Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ablekuma",
+    "aliases": [
+      "Ablekuma"
+    ],
+    "district": "Ablekuma Central",
+    "streets": [
+      "Ablekuma High Street",
+      "Ablekuma Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Accra",
+    "aliases": [
+      "Accra"
+    ],
+    "district": "Accra",
+    "streets": [
+      "Accra High Street",
+      "Accra Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ashaiman",
+    "aliases": [
+      "Ashaiman"
+    ],
+    "district": "Ashaiman",
+    "streets": [
+      "Ashaiman High Street",
+      "Ashaiman Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ga",
+    "aliases": [
+      "Ga"
+    ],
+    "district": "Ga Central",
+    "streets": [
+      "Ga High Street",
+      "Ga Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Adentan",
+    "aliases": [
+      "Adentan"
+    ],
+    "district": "Adentan",
+    "streets": [
+      "Adentan High Street",
+      "Adentan Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ga",
+    "aliases": [
+      "Ga"
+    ],
+    "district": "Ga East",
+    "streets": [
+      "Ga High Street",
+      "Ga Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ablekuma",
+    "aliases": [
+      "Ablekuma"
+    ],
+    "district": "Ablekuma North",
+    "streets": [
+      "Ablekuma High Street",
+      "Ablekuma Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ga",
+    "aliases": [
+      "Ga"
+    ],
+    "district": "Ga North",
+    "streets": [
+      "Ga High Street",
+      "Ga Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Okaikwei",
+    "aliases": [
+      "Okaikwei"
+    ],
+    "district": "Okaikwei North",
+    "streets": [
+      "Okaikwei High Street",
+      "Okaikwei Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Weija Gbawe",
+    "aliases": [
+      "Weija Gbawe"
+    ],
+    "district": "Weija Gbawe",
+    "streets": [
+      "Weija Gbawe High Street",
+      "Weija Gbawe Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Kpone Katamanso",
+    "aliases": [
+      "Kpone Katamanso"
+    ],
+    "district": "Kpone Katamanso",
+    "streets": [
+      "Kpone Katamanso High Street",
+      "Kpone Katamanso Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "La Dade Kotopon",
+    "aliases": [
+      "La Dade Kotopon"
+    ],
+    "district": "La Dade Kotopon",
+    "streets": [
+      "La Dade Kotopon High Street",
+      "La Dade Kotopon Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "La Nkwantanang Madina",
+    "aliases": [
+      "La Nkwantanang Madina"
+    ],
+    "district": "La Nkwantanang Madina",
+    "streets": [
+      "La Nkwantanang Madina High Street",
+      "La Nkwantanang Madina Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ningo Prampram",
+    "aliases": [
+      "Ningo Prampram"
+    ],
+    "district": "Ningo Prampram",
+    "streets": [
+      "Ningo Prampram High Street",
+      "Ningo Prampram Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "ShaI-Osudoku",
+    "aliases": [
+      "ShaI-Osudoku"
+    ],
+    "district": "ShaI-Osudoku",
+    "streets": [
+      "ShaI-Osudoku High Street",
+      "ShaI-Osudoku Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Tema",
+    "aliases": [
+      "Tema"
+    ],
+    "district": "Tema West",
+    "streets": [
+      "Tema High Street",
+      "Tema Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Korle Klottey",
+    "aliases": [
+      "Korle Klottey"
+    ],
+    "district": "Korle Klottey",
+    "streets": [
+      "Korle Klottey High Street",
+      "Korle Klottey Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ga",
+    "aliases": [
+      "Ga"
+    ],
+    "district": "Ga South",
+    "streets": [
+      "Ga High Street",
+      "Ga Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Tema",
+    "aliases": [
+      "Tema"
+    ],
+    "district": "Tema",
+    "streets": [
+      "Tema High Street",
+      "Tema Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ablekuma",
+    "aliases": [
+      "Ablekuma"
+    ],
+    "district": "Ablekuma West",
+    "streets": [
+      "Ablekuma High Street",
+      "Ablekuma Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ayawaso",
+    "aliases": [
+      "Ayawaso"
+    ],
+    "district": "Ayawaso East",
+    "streets": [
+      "Ayawaso High Street",
+      "Ayawaso Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ga",
+    "aliases": [
+      "Ga"
+    ],
+    "district": "Ga West",
+    "streets": [
+      "Ga High Street",
+      "Ga Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ada",
+    "aliases": [
+      "Ada"
+    ],
+    "district": "Ada West",
+    "streets": [
+      "Ada High Street",
+      "Ada Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ada",
+    "aliases": [
+      "Ada"
+    ],
+    "district": "Ada East",
+    "streets": [
+      "Ada High Street",
+      "Ada Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ledzokuku",
+    "aliases": [
+      "Ledzokuku"
+    ],
+    "district": "Ledzokuku",
+    "streets": [
+      "Ledzokuku High Street",
+      "Ledzokuku Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Asunafo",
+    "aliases": [
+      "Asunafo"
+    ],
+    "district": "Asunafo North",
+    "streets": [
+      "Asunafo High Street",
+      "Asunafo Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Asunafo",
+    "aliases": [
+      "Asunafo"
+    ],
+    "district": "Asunafo South",
+    "streets": [
+      "Asunafo High Street",
+      "Asunafo Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Asutifi",
+    "aliases": [
+      "Asutifi"
+    ],
+    "district": "Asutifi North",
+    "streets": [
+      "Asutifi High Street",
+      "Asutifi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Asutifi",
+    "aliases": [
+      "Asutifi"
+    ],
+    "district": "Asutifi South",
+    "streets": [
+      "Asutifi High Street",
+      "Asutifi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Tano",
+    "aliases": [
+      "Tano"
+    ],
+    "district": "Tano South",
+    "streets": [
+      "Tano High Street",
+      "Tano Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Tano",
+    "aliases": [
+      "Tano"
+    ],
+    "district": "Tano North",
+    "streets": [
+      "Tano High Street",
+      "Tano Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Chereponi",
+    "aliases": [
+      "Chereponi"
+    ],
+    "district": "Chereponi",
+    "streets": [
+      "Chereponi High Street",
+      "Chereponi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "East Mamprusi",
+    "aliases": [
+      "East Mamprusi"
+    ],
+    "district": "East Mamprusi",
+    "streets": [
+      "East Mamprusi High Street",
+      "East Mamprusi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Mamprugu Moaduri",
+    "aliases": [
+      "Mamprugu Moaduri"
+    ],
+    "district": "Mamprugu Moaduri",
+    "streets": [
+      "Mamprugu Moaduri High Street",
+      "Mamprugu Moaduri Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Bunkpurugu Nakpanduri",
+    "aliases": [
+      "Bunkpurugu Nakpanduri"
+    ],
+    "district": "Bunkpurugu Nakpanduri",
+    "streets": [
+      "Bunkpurugu Nakpanduri High Street",
+      "Bunkpurugu Nakpanduri Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "West Mamprusi",
+    "aliases": [
+      "West Mamprusi"
+    ],
+    "district": "West Mamprusi",
+    "streets": [
+      "West Mamprusi High Street",
+      "West Mamprusi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Yunyoo Nasuan",
+    "aliases": [
+      "Yunyoo Nasuan"
+    ],
+    "district": "Yunyoo Nasuan",
+    "streets": [
+      "Yunyoo Nasuan High Street",
+      "Yunyoo Nasuan Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Kpandai",
+    "aliases": [
+      "Kpandai"
+    ],
+    "district": "Kpandai",
+    "streets": [
+      "Kpandai High Street",
+      "Kpandai Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Tatale Sangule",
+    "aliases": [
+      "Tatale Sangule"
+    ],
+    "district": "Tatale Sangule",
+    "streets": [
+      "Tatale Sangule High Street",
+      "Tatale Sangule Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Gushiegu",
+    "aliases": [
+      "Gushiegu"
+    ],
+    "district": "Gushiegu",
+    "streets": [
+      "Gushiegu High Street",
+      "Gushiegu Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Mion",
+    "aliases": [
+      "Mion"
+    ],
+    "district": "Mion",
+    "streets": [
+      "Mion High Street",
+      "Mion Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Kumbungu",
+    "aliases": [
+      "Kumbungu"
+    ],
+    "district": "Kumbungu",
+    "streets": [
+      "Kumbungu High Street",
+      "Kumbungu Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Tolon",
+    "aliases": [
+      "Tolon"
+    ],
+    "district": "Tolon",
+    "streets": [
+      "Tolon High Street",
+      "Tolon Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Nanumba",
+    "aliases": [
+      "Nanumba"
+    ],
+    "district": "Nanumba North",
+    "streets": [
+      "Nanumba High Street",
+      "Nanumba Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Nanumba",
+    "aliases": [
+      "Nanumba"
+    ],
+    "district": "Nanumba South",
+    "streets": [
+      "Nanumba High Street",
+      "Nanumba Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Karaga",
+    "aliases": [
+      "Karaga"
+    ],
+    "district": "Karaga",
+    "streets": [
+      "Karaga High Street",
+      "Karaga Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Sagnerigu",
+    "aliases": [
+      "Sagnerigu"
+    ],
+    "district": "Sagnerigu",
+    "streets": [
+      "Sagnerigu High Street",
+      "Sagnerigu Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Tamale",
+    "aliases": [
+      "Tamale"
+    ],
+    "district": "Tamale",
+    "streets": [
+      "Tamale High Street",
+      "Tamale Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Nanton",
+    "aliases": [
+      "Nanton"
+    ],
+    "district": "Nanton",
+    "streets": [
+      "Nanton High Street",
+      "Nanton Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Savelugu",
+    "aliases": [
+      "Savelugu"
+    ],
+    "district": "Savelugu",
+    "streets": [
+      "Savelugu High Street",
+      "Savelugu Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Saboba",
+    "aliases": [
+      "Saboba"
+    ],
+    "district": "Saboba",
+    "streets": [
+      "Saboba High Street",
+      "Saboba Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Yendi",
+    "aliases": [
+      "Yendi"
+    ],
+    "district": "Yendi",
+    "streets": [
+      "Yendi High Street",
+      "Yendi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Zabzugu",
+    "aliases": [
+      "Zabzugu"
+    ],
+    "district": "Zabzugu",
+    "streets": [
+      "Zabzugu High Street",
+      "Zabzugu Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Biakoye",
+    "aliases": [
+      "Biakoye"
+    ],
+    "district": "Biakoye",
+    "streets": [
+      "Biakoye High Street",
+      "Biakoye Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Krachi",
+    "aliases": [
+      "Krachi"
+    ],
+    "district": "Krachi East",
+    "streets": [
+      "Krachi High Street",
+      "Krachi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Guan",
+    "aliases": [
+      "Guan"
+    ],
+    "district": "Guan",
+    "streets": [
+      "Guan High Street",
+      "Guan Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Jasikan",
+    "aliases": [
+      "Jasikan"
+    ],
+    "district": "Jasikan",
+    "streets": [
+      "Jasikan High Street",
+      "Jasikan Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Kadjebi",
+    "aliases": [
+      "Kadjebi"
+    ],
+    "district": "Kadjebi",
+    "streets": [
+      "Kadjebi High Street",
+      "Kadjebi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Nkwanta",
+    "aliases": [
+      "Nkwanta"
+    ],
+    "district": "Nkwanta North",
+    "streets": [
+      "Nkwanta High Street",
+      "Nkwanta Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Krachi Nchumuru",
+    "aliases": [
+      "Krachi Nchumuru"
+    ],
+    "district": "Krachi Nchumuru",
+    "streets": [
+      "Krachi Nchumuru High Street",
+      "Krachi Nchumuru Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Nkwanta",
+    "aliases": [
+      "Nkwanta"
+    ],
+    "district": "Nkwanta South",
+    "streets": [
+      "Nkwanta High Street",
+      "Nkwanta Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Krachi",
+    "aliases": [
+      "Krachi"
+    ],
+    "district": "Krachi West",
+    "streets": [
+      "Krachi High Street",
+      "Krachi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "BOLE",
+    "aliases": [
+      "BOLE"
+    ],
+    "district": "BOLE",
+    "streets": [
+      "BOLE High Street",
+      "BOLE Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "EAST GONJA",
+    "aliases": [
+      "EAST GONJA"
+    ],
+    "district": "EAST GONJA",
+    "streets": [
+      "EAST GONJA High Street",
+      "EAST GONJA Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "CENTRAL GONJA",
+    "aliases": [
+      "CENTRAL GONJA"
+    ],
+    "district": "CENTRAL GONJA",
+    "streets": [
+      "CENTRAL GONJA High Street",
+      "CENTRAL GONJA Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "North East Gonja",
+    "aliases": [
+      "North East Gonja"
+    ],
+    "district": "North East Gonja",
+    "streets": [
+      "North East Gonja High Street",
+      "North East Gonja Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "NORTH GONJA",
+    "aliases": [
+      "NORTH GONJA"
+    ],
+    "district": "NORTH GONJA",
+    "streets": [
+      "NORTH GONJA High Street",
+      "NORTH GONJA Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Sawla Tuna Kalba",
+    "aliases": [
+      "Sawla Tuna Kalba"
+    ],
+    "district": "Sawla Tuna Kalba",
+    "streets": [
+      "Sawla Tuna Kalba High Street",
+      "Sawla Tuna Kalba Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "WEST GONJA",
+    "aliases": [
+      "WEST GONJA"
+    ],
+    "district": "WEST GONJA",
+    "streets": [
+      "WEST GONJA High Street",
+      "WEST GONJA Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Atebubu-Amantin",
+    "aliases": [
+      "Atebubu-Amantin"
+    ],
+    "district": "Atebubu-Amantin",
+    "streets": [
+      "Atebubu-Amantin High Street",
+      "Atebubu-Amantin Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Sene",
+    "aliases": [
+      "Sene"
+    ],
+    "district": "Sene East",
+    "streets": [
+      "Sene High Street",
+      "Sene Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Kintampo",
+    "aliases": [
+      "Kintampo"
+    ],
+    "district": "Kintampo North",
+    "streets": [
+      "Kintampo High Street",
+      "Kintampo Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Kintampo",
+    "aliases": [
+      "Kintampo"
+    ],
+    "district": "Kintampo South",
+    "streets": [
+      "Kintampo High Street",
+      "Kintampo Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Nkoranza",
+    "aliases": [
+      "Nkoranza"
+    ],
+    "district": "Nkoranza North",
+    "streets": [
+      "Nkoranza High Street",
+      "Nkoranza Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Nkoranza",
+    "aliases": [
+      "Nkoranza"
+    ],
+    "district": "Nkoranza South",
+    "streets": [
+      "Nkoranza High Street",
+      "Nkoranza Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Pru",
+    "aliases": [
+      "Pru"
+    ],
+    "district": "Pru East",
+    "streets": [
+      "Pru High Street",
+      "Pru Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Sene",
+    "aliases": [
+      "Sene"
+    ],
+    "district": "Sene West",
+    "streets": [
+      "Sene High Street",
+      "Sene Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Techiman",
+    "aliases": [
+      "Techiman"
+    ],
+    "district": "Techiman",
+    "streets": [
+      "Techiman High Street",
+      "Techiman Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Pru",
+    "aliases": [
+      "Pru"
+    ],
+    "district": "Pru West",
+    "streets": [
+      "Pru High Street",
+      "Pru Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Techiman",
+    "aliases": [
+      "Techiman"
+    ],
+    "district": "Techiman North",
+    "streets": [
+      "Techiman High Street",
+      "Techiman Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Bawku",
+    "aliases": [
+      "Bawku"
+    ],
+    "district": "Bawku",
+    "streets": [
+      "Bawku High Street",
+      "Bawku Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Bolgatanga",
+    "aliases": [
+      "Bolgatanga"
+    ],
+    "district": "Bolgatanga",
+    "streets": [
+      "Bolgatanga High Street",
+      "Bolgatanga Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Bolgatanga",
+    "aliases": [
+      "Bolgatanga"
+    ],
+    "district": "Bolgatanga East",
+    "streets": [
+      "Bolgatanga High Street",
+      "Bolgatanga Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Garu",
+    "aliases": [
+      "Garu"
+    ],
+    "district": "Garu",
+    "streets": [
+      "Garu High Street",
+      "Garu Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Kassena Nankana",
+    "aliases": [
+      "Kassena Nankana"
+    ],
+    "district": "Kassena Nankana East",
+    "streets": [
+      "Kassena Nankana High Street",
+      "Kassena Nankana Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Kassena Nankana",
+    "aliases": [
+      "Kassena Nankana"
+    ],
+    "district": "Kassena Nankana West",
+    "streets": [
+      "Kassena Nankana High Street",
+      "Kassena Nankana Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Tempane",
+    "aliases": [
+      "Tempane"
+    ],
+    "district": "Tempane",
+    "streets": [
+      "Tempane High Street",
+      "Tempane Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Nabdam",
+    "aliases": [
+      "Nabdam"
+    ],
+    "district": "Nabdam",
+    "streets": [
+      "Nabdam High Street",
+      "Nabdam Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Bongo",
+    "aliases": [
+      "Bongo"
+    ],
+    "district": "Bongo",
+    "streets": [
+      "Bongo High Street",
+      "Bongo Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Pusiga",
+    "aliases": [
+      "Pusiga"
+    ],
+    "district": "Pusiga",
+    "streets": [
+      "Pusiga High Street",
+      "Pusiga Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Builsa",
+    "aliases": [
+      "Builsa"
+    ],
+    "district": "Builsa North",
+    "streets": [
+      "Builsa High Street",
+      "Builsa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Builsa",
+    "aliases": [
+      "Builsa"
+    ],
+    "district": "Builsa South",
+    "streets": [
+      "Builsa High Street",
+      "Builsa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Talensi",
+    "aliases": [
+      "Talensi"
+    ],
+    "district": "Talensi",
+    "streets": [
+      "Talensi High Street",
+      "Talensi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Binduri",
+    "aliases": [
+      "Binduri"
+    ],
+    "district": "Binduri",
+    "streets": [
+      "Binduri High Street",
+      "Binduri Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Bawku",
+    "aliases": [
+      "Bawku"
+    ],
+    "district": "Bawku West",
+    "streets": [
+      "Bawku High Street",
+      "Bawku Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Adaklu",
+    "aliases": [
+      "Adaklu"
+    ],
+    "district": "Adaklu",
+    "streets": [
+      "Adaklu High Street",
+      "Adaklu Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Hohoe",
+    "aliases": [
+      "Hohoe"
+    ],
+    "district": "Hohoe",
+    "streets": [
+      "Hohoe High Street",
+      "Hohoe Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "North Dayi",
+    "aliases": [
+      "North Dayi"
+    ],
+    "district": "North Dayi",
+    "streets": [
+      "North Dayi High Street",
+      "North Dayi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "South Dayi",
+    "aliases": [
+      "South Dayi"
+    ],
+    "district": "South Dayi",
+    "streets": [
+      "South Dayi High Street",
+      "South Dayi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Afadjato",
+    "aliases": [
+      "Afadjato"
+    ],
+    "district": "Afadjato South",
+    "streets": [
+      "Afadjato High Street",
+      "Afadjato Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Agotime Ziope",
+    "aliases": [
+      "Agotime Ziope"
+    ],
+    "district": "Agotime Ziope",
+    "streets": [
+      "Agotime Ziope High Street",
+      "Agotime Ziope Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ho",
+    "aliases": [
+      "Ho"
+    ],
+    "district": "Ho",
+    "streets": [
+      "Ho High Street",
+      "Ho Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ho",
+    "aliases": [
+      "Ho"
+    ],
+    "district": "Ho West",
+    "streets": [
+      "Ho High Street",
+      "Ho Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Keta",
+    "aliases": [
+      "Keta"
+    ],
+    "district": "Keta",
+    "streets": [
+      "Keta High Street",
+      "Keta Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Anloga",
+    "aliases": [
+      "Anloga"
+    ],
+    "district": "Anloga",
+    "streets": [
+      "Anloga High Street",
+      "Anloga Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Kpando",
+    "aliases": [
+      "Kpando"
+    ],
+    "district": "Kpando",
+    "streets": [
+      "Kpando High Street",
+      "Kpando Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "North Tongu",
+    "aliases": [
+      "North Tongu"
+    ],
+    "district": "North Tongu",
+    "streets": [
+      "North Tongu High Street",
+      "North Tongu Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "South Tongu",
+    "aliases": [
+      "South Tongu"
+    ],
+    "district": "South Tongu",
+    "streets": [
+      "South Tongu High Street",
+      "South Tongu Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Central Tongu",
+    "aliases": [
+      "Central Tongu"
+    ],
+    "district": "Central Tongu",
+    "streets": [
+      "Central Tongu High Street",
+      "Central Tongu Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Akatsi",
+    "aliases": [
+      "Akatsi"
+    ],
+    "district": "Akatsi North",
+    "streets": [
+      "Akatsi High Street",
+      "Akatsi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Akatsi",
+    "aliases": [
+      "Akatsi"
+    ],
+    "district": "Akatsi South",
+    "streets": [
+      "Akatsi High Street",
+      "Akatsi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ketu",
+    "aliases": [
+      "Ketu"
+    ],
+    "district": "Ketu North",
+    "streets": [
+      "Ketu High Street",
+      "Ketu Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ketu",
+    "aliases": [
+      "Ketu"
+    ],
+    "district": "Ketu South",
+    "streets": [
+      "Ketu High Street",
+      "Ketu Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ellembelle",
+    "aliases": [
+      "Ellembelle"
+    ],
+    "district": "Ellembelle",
+    "streets": [
+      "Ellembelle High Street",
+      "Ellembelle Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Ahanta",
+    "aliases": [
+      "Ahanta"
+    ],
+    "district": "Ahanta West",
+    "streets": [
+      "Ahanta High Street",
+      "Ahanta Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Jomoro",
+    "aliases": [
+      "Jomoro"
+    ],
+    "district": "Jomoro",
+    "streets": [
+      "Jomoro High Street",
+      "Jomoro Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Effia Kwesimintim",
+    "aliases": [
+      "Effia Kwesimintim"
+    ],
+    "district": "Effia Kwesimintim",
+    "streets": [
+      "Effia Kwesimintim High Street",
+      "Effia Kwesimintim Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Mpohor",
+    "aliases": [
+      "Mpohor"
+    ],
+    "district": "Mpohor",
+    "streets": [
+      "Mpohor High Street",
+      "Mpohor Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Nzema",
+    "aliases": [
+      "Nzema"
+    ],
+    "district": "Nzema East",
+    "streets": [
+      "Nzema High Street",
+      "Nzema Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Prestea Huni Valley",
+    "aliases": [
+      "Prestea Huni Valley"
+    ],
+    "district": "Prestea Huni Valley",
+    "streets": [
+      "Prestea Huni Valley High Street",
+      "Prestea Huni Valley Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Shama",
+    "aliases": [
+      "Shama"
+    ],
+    "district": "Shama",
+    "streets": [
+      "Shama High Street",
+      "Shama Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "SekondI-Takoradi",
+    "aliases": [
+      "SekondI-Takoradi"
+    ],
+    "district": "SekondI-Takoradi",
+    "streets": [
+      "SekondI-Takoradi High Street",
+      "SekondI-Takoradi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Tarkwa Nsuaem",
+    "aliases": [
+      "Tarkwa Nsuaem"
+    ],
+    "district": "Tarkwa Nsuaem",
+    "streets": [
+      "Tarkwa Nsuaem High Street",
+      "Tarkwa Nsuaem Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Wassa Amenfi",
+    "aliases": [
+      "Wassa Amenfi"
+    ],
+    "district": "Wassa Amenfi Central",
+    "streets": [
+      "Wassa Amenfi High Street",
+      "Wassa Amenfi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Wassa Amenfi",
+    "aliases": [
+      "Wassa Amenfi"
+    ],
+    "district": "Wassa Amenfi East",
+    "streets": [
+      "Wassa Amenfi High Street",
+      "Wassa Amenfi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Wassa Amenfi",
+    "aliases": [
+      "Wassa Amenfi"
+    ],
+    "district": "Wassa Amenfi West",
+    "streets": [
+      "Wassa Amenfi High Street",
+      "Wassa Amenfi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Wassa",
+    "aliases": [
+      "Wassa"
+    ],
+    "district": "Wassa East",
+    "streets": [
+      "Wassa High Street",
+      "Wassa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Daffiama Bussie Issa",
+    "aliases": [
+      "Daffiama Bussie Issa"
+    ],
+    "district": "Daffiama Bussie Issa",
+    "streets": [
+      "Daffiama Bussie Issa High Street",
+      "Daffiama Bussie Issa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Jirapa",
+    "aliases": [
+      "Jirapa"
+    ],
+    "district": "Jirapa",
+    "streets": [
+      "Jirapa High Street",
+      "Jirapa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Lambussie Karni",
+    "aliases": [
+      "Lambussie Karni"
+    ],
+    "district": "Lambussie Karni",
+    "streets": [
+      "Lambussie Karni High Street",
+      "Lambussie Karni Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Lawra",
+    "aliases": [
+      "Lawra"
+    ],
+    "district": "Lawra",
+    "streets": [
+      "Lawra High Street",
+      "Lawra Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Nandom",
+    "aliases": [
+      "Nandom"
+    ],
+    "district": "Nandom",
+    "streets": [
+      "Nandom High Street",
+      "Nandom Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Nadowli Kaleo",
+    "aliases": [
+      "Nadowli Kaleo"
+    ],
+    "district": "Nadowli Kaleo",
+    "streets": [
+      "Nadowli Kaleo High Street",
+      "Nadowli Kaleo Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Sissala",
+    "aliases": [
+      "Sissala"
+    ],
+    "district": "Sissala East",
+    "streets": [
+      "Sissala High Street",
+      "Sissala Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Sissala",
+    "aliases": [
+      "Sissala"
+    ],
+    "district": "Sissala West",
+    "streets": [
+      "Sissala High Street",
+      "Sissala Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Wa",
+    "aliases": [
+      "Wa"
+    ],
+    "district": "Wa",
+    "streets": [
+      "Wa High Street",
+      "Wa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Wa",
+    "aliases": [
+      "Wa"
+    ],
+    "district": "Wa East",
+    "streets": [
+      "Wa High Street",
+      "Wa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Wa",
+    "aliases": [
+      "Wa"
+    ],
+    "district": "Wa West",
+    "streets": [
+      "Wa High Street",
+      "Wa Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Aowin",
+    "aliases": [
+      "Aowin"
+    ],
+    "district": "Aowin",
+    "streets": [
+      "Aowin High Street",
+      "Aowin Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Bibiani Anhwiaso Bekwai",
+    "aliases": [
+      "Bibiani Anhwiaso Bekwai"
+    ],
+    "district": "Bibiani Anhwiaso Bekwai",
+    "streets": [
+      "Bibiani Anhwiaso Bekwai High Street",
+      "Bibiani Anhwiaso Bekwai Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Bodi",
+    "aliases": [
+      "Bodi"
+    ],
+    "district": "Bodi",
+    "streets": [
+      "Bodi High Street",
+      "Bodi Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Bia",
+    "aliases": [
+      "Bia"
+    ],
+    "district": "Bia East",
+    "streets": [
+      "Bia High Street",
+      "Bia Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Juaboso",
+    "aliases": [
+      "Juaboso"
+    ],
+    "district": "Juaboso",
+    "streets": [
+      "Juaboso High Street",
+      "Juaboso Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Sefwi Akontombra",
+    "aliases": [
+      "Sefwi Akontombra"
+    ],
+    "district": "Sefwi Akontombra",
+    "streets": [
+      "Sefwi Akontombra High Street",
+      "Sefwi Akontombra Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Sefwi Wiawso",
+    "aliases": [
+      "Sefwi Wiawso"
+    ],
+    "district": "Sefwi Wiawso",
+    "streets": [
+      "Sefwi Wiawso High Street",
+      "Sefwi Wiawso Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Suaman",
+    "aliases": [
+      "Suaman"
+    ],
+    "district": "Suaman",
+    "streets": [
+      "Suaman High Street",
+      "Suaman Market Road",
+      "Post Office Road"
+    ]
+  },
+  {
+    "name": "Bia",
+    "aliases": [
+      "Bia"
+    ],
+    "district": "Bia West",
+    "streets": [
+      "Bia High Street",
+      "Bia Market Road",
+      "Post Office Road"
+    ]
+  }
+]

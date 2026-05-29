@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "name": "Electoral_Areas_Sample",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { 
+        "name": "East Legon Electoral Area", 
+        "district": "Ayawaso West Municipal",
+        "assembly_zone": "Zone A"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[ -0.21, 5.61 ], [ -0.16, 5.61 ], [ -0.16, 5.66 ], [ -0.21, 5.66 ], [ -0.21, 5.61 ]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { 
+        "name": "Abokobi Electoral Area", 
+        "district": "Ga East Municipal",
+        "assembly_zone": "Zone B"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[ -0.28, 5.72 ], [ -0.22, 5.72 ], [ -0.22, 5.78 ], [ -0.28, 5.78 ], [ -0.28, 5.72 ]]]
+      }
+    }
+  ]
+}

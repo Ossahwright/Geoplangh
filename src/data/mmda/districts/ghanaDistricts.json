@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "name": "Ghana_Districts_Sample",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { 
+        "name": "Ayawaso West Municipal", 
+        "region": "Greater Accra Region",
+        "district_code": "GA-W",
+        "category": "Municipal Assembly"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[ -0.22, 5.61 ], [ -0.15, 5.61 ], [ -0.15, 5.68 ], [ -0.22, 5.68 ], [ -0.22, 5.61 ]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { 
+        "name": "Kumasi Metropolitan", 
+        "region": "Ashanti Region",
+        "district_code": "KMA",
+        "category": "Metropolitan Assembly"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[ -1.65, 6.65 ], [ -1.55, 6.65 ], [ -1.55, 6.75 ], [ -1.65, 6.75 ], [ -1.65, 6.65 ]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { 
+        "name": "Ga East Municipal", 
+        "region": "Greater Accra Region",
+        "district_code": "GA-E",
+        "category": "Municipal Assembly"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[ -0.30, 5.70 ], [ -0.20, 5.70 ], [ -0.20, 5.80 ], [ -0.30, 5.80 ], [ -0.30, 5.70 ]]]
+      }
+    }
+  ]
+}
