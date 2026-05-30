@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { jsPDF } from 'jspdf';
 import { toJpeg } from 'html-to-image';
 import { SitePlan, Pillar } from './types';
-import { getLatLngFromGPS, generateGhanaPostGPS, generatePillars, cn } from './lib/utils';
+import { getLatLngFromGPS, generateGhanaPostGPS, generatePillars, latLngToUTM30N, cn } from './lib/utils';
 import { SitePlanPreview } from './components/SitePlanPreview';
 import { LandmarkPreview } from './components/LandmarkPreview';
 import { GisProcessingHud } from './components/GisProcessingHud';
@@ -25,33 +25,54 @@ const GHANA_REGIONS = [
 ];
 
 function App() {
-  const [session, setSession] = useState<FirebaseUser | null>(null);
+  const [session, setSession] = useState<any>(null);
   const [authChecking, setAuthChecking] = useState(true);
 
   // Check auth session
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setSession(user);
+      if (user) {
+        setSession(user);
+      } else {
+        setSession((prev: any) => prev && prev.isLocalOffline ? prev : null);
+      }
       setAuthChecking(false);
     });
     return unsubscribe;
   }, []);
 
   const handleLogout = async () => {
-    await signOut(auth);
+    if (session && session.isLocalOffline) {
+      setSession(null);
+    } else {
+      await signOut(auth);
+    }
   };
 
+  interface SystemStats {
+    totalPlans: number;
+    totalAcreage: number;
+    lastGeneratedAt: string;
+  }
+
+  const [systemStats, setSystemStats] = useState<SystemStats | null>(null);
   const [plans, setPlans] = useState<SitePlan[]>([]);
   
-  // Real-time synchronization of plans with Firestore
+  // Real-time synchronization of plans with Firestore or localStorage
   useEffect(() => {
-    if (!session) {
-      // Fallback or read from localStorage when unauthenticated
+    if (!session || session.isLocalOffline) {
+      // Fallback or read from localStorage when unauthenticated or local offline
       try {
         const stored = localStorage.getItem('sitePlans');
         const parsed = stored ? JSON.parse(stored) : [];
         const normalized = Array.isArray(parsed) ? parsed.map((p: any) => restoreNestedArrays(p)) : [];
         setPlans(normalized);
+        const totalAcreage = normalized.reduce((acc: number, p: any) => acc + (p.acreage || 0), 0);
+        setSystemStats({
+          totalPlans: normalized.length,
+          totalAcreage: Number(totalAcreage.toFixed(2)),
+          lastGeneratedAt: normalized.length > 0 ? new Date().toISOString() : "Never"
+        });
       } catch {
         setPlans([]);
       }
@@ -75,24 +96,16 @@ function App() {
     return unsubscribe;
   }, [session]);
 
-  // Sync back to local storage only when unauthenticated
+  // Sync back to local storage only when unauthenticated or local offline
   useEffect(() => {
-    if (!session && plans.length > 0) {
+    if ((!session || session.isLocalOffline) && plans.length > 0) {
       localStorage.setItem('sitePlans', JSON.stringify(plans));
     }
   }, [plans, session]);
 
-  interface SystemStats {
-    totalPlans: number;
-    totalAcreage: number;
-    lastGeneratedAt: string;
-  }
-
-  const [systemStats, setSystemStats] = useState<SystemStats | null>(null);
-
-  // Load and subscribe to system stats in real time
+  // Load and subscribe to system stats in real time (for Firebase cloud mode)
   useEffect(() => {
-    if (!session) return;
+    if (!session || session.isLocalOffline) return;
     
     const statsRef = doc(db, "stats", "system");
     const unsubscribe = onSnapshot(statsRef, (docSnap) => {
@@ -172,13 +185,25 @@ function App() {
       // Let the Fused GeoIntelligence Engine coordinate everything (Steps 1 to 13)
       const fusedProfile = await FusedGeoIntelligenceEngine.resolve(finalGps);
       
-      // Deterministic Base Pillars calculation based on GPS seed
-      let hash = 0;
-      for (let i = 0; i < finalGps.length; i++) hash = ((hash << 5) - hash) + finalGps.charCodeAt(i);
-      const rng = () => { hash = (hash * 9301 + 49297) % 233280; return Math.abs(hash / 233280); };
+      // Fetch OSM Data around the final coordinates for local interactive map overlays and pillar alignment
+      const { fetchOSMData } = await import('./services/osmService');
+      const osmData = await fetchOSMData(fusedProfile.lat, fusedProfile.lng, 350);
       
-      const baseEasting = 410000 + rng() * 20000;
-      const baseNorthing = 620000 + rng() * 20000;
+      if (osmData) {
+        (osmData as any).roads = osmData.ways?.filter((w: any) => w.type === 'highway') || [];
+        (osmData as any).buildings = osmData.ways?.filter((w: any) => w.type === 'building') || [];
+      }
+
+      // Diagnostic logging as requested
+      console.log("FUSED COORDINATES", fusedProfile.lat, fusedProfile.lng);
+      console.log("OSM ROADS", (osmData as any)?.roads?.length || 0);
+      console.log("OSM BUILDINGS", (osmData as any)?.buildings?.length || 0);
+      console.log("PILLAR SOURCE", "FUSED_COORDINATES");
+
+      // Real-world base projected coordinates (UTM Zone 30N) rather than legacy hash seed
+      const utmProjected = latLngToUTM30N(fusedProfile.lat, fusedProfile.lng);
+      const baseEasting = utmProjected.easting;
+      const baseNorthing = utmProjected.northing;
       
       // Calculate plot size in meters based on Acreage (1 Acre = 4046.86 sqm)
       const parsedAcreage = parseFloat(acreage);
@@ -186,11 +211,13 @@ function App() {
       const areaSqm = safeAcreage * 4046.86;
       const size = Math.max(Math.sqrt(areaSqm * (plotShape === 'rectangle' ? 1.2 : 1.0)), 10);
       
-      const calculatedPillars = generatePillars(baseEasting, baseNorthing, size, plotShape, finalGps);
-      
-      // Fetch OSM Data around the final coordinates for local interactive map overlays
-      const { fetchOSMData } = await import('./services/osmService');
-      const osmData = await fetchOSMData(fusedProfile.lat, fusedProfile.lng, 350);
+      const calculatedPillars = generatePillars(baseEasting, baseNorthing, size, plotShape, finalGps, {
+        lat: fusedProfile.lat,
+        lng: fusedProfile.lng,
+        osmData,
+        accessPathType: fusedProfile.accessPathType,
+        nearbyLandmark: fusedProfile.nearbyLandmark
+      });
       
       // MMDA GIS Enrichment Pipeline
       const enrichment = enrichWithMMDAGIS(
@@ -243,7 +270,7 @@ function App() {
       // Wait 3.5 seconds to allow the GisProcessingHud animation & steps to complete beautifully
       await new Promise(resolve => setTimeout(resolve, 3600));
 
-      if (session) {
+      if (session && !session.isLocalOffline) {
         const path = `site_plans/${newPlan.id}`;
         try {
           await setDoc(doc(db, "site_plans", newPlan.id), sanitizePlanForFirestore(newPlan, session.uid));
@@ -269,7 +296,20 @@ function App() {
           handleFirestoreError(error, OperationType.WRITE, path);
         }
       } else {
-        setPlans(prev => [newPlan, ...prev]);
+        setPlans(prev => {
+          const updated = [newPlan, ...prev];
+          localStorage.setItem('sitePlans', JSON.stringify(updated));
+          return updated;
+        });
+        setSystemStats(prev => {
+          const currentTotal = (prev?.totalPlans || 0) + 1;
+          const currentAcreage = Number(((prev?.totalAcreage || 0) + newPlan.acreage).toFixed(2));
+          return {
+            totalPlans: currentTotal,
+            totalAcreage: currentAcreage,
+            lastGeneratedAt: new Date().toISOString()
+          };
+        });
       }
       setActivePlanId(newPlan.id);
     } catch(err) {
@@ -284,7 +324,7 @@ function App() {
 
   const deletePlan = async (id: string, e: React.MouseEvent) => {
     e.stopPropagation();
-    if (session) {
+    if (session && !session.isLocalOffline) {
       const path = `site_plans/${id}`;
       try {
         await deleteDoc(doc(db, "site_plans", id));
@@ -292,7 +332,21 @@ function App() {
         handleFirestoreError(error, OperationType.DELETE, path);
       }
     } else {
-      setPlans(prev => prev.filter(p => p.id !== id));
+      setPlans(prev => {
+        const updated = prev.filter(p => p.id !== id);
+        localStorage.setItem('sitePlans', JSON.stringify(updated));
+        return updated;
+      });
+      setSystemStats(prev => {
+        if (!prev) return null;
+        const deletedPlan = plans.find(p => p.id === id);
+        const subAcreage = deletedPlan ? deletedPlan.acreage : 0;
+        return {
+          totalPlans: Math.max(0, prev.totalPlans - 1),
+          totalAcreage: Number(Math.max(0, prev.totalAcreage - subAcreage).toFixed(2)),
+          lastGeneratedAt: new Date().toISOString()
+        };
+      });
     }
     if (activePlanId === id) {
       setActivePlanId(null);
@@ -302,14 +356,20 @@ function App() {
   const updatePlanField = async (planId: string | undefined, fields: Partial<SitePlan>) => {
     if (!planId) return;
     let updatedPlan: SitePlan | undefined;
-    setPlans(prev => prev.map(p => {
-      if (p.id === planId) {
-        updatedPlan = { ...p, ...fields };
-        return updatedPlan;
+    setPlans(prev => {
+      const updated = prev.map(p => {
+        if (p.id === planId) {
+          updatedPlan = { ...p, ...fields };
+          return updatedPlan;
+        }
+        return p;
+      });
+      if (!session || session.isLocalOffline) {
+        localStorage.setItem('sitePlans', JSON.stringify(updated));
       }
-      return p;
-    }));
-    if (session) {
+      return updated;
+    });
+    if (session && !session.isLocalOffline) {
       const path = `site_plans/${planId}`;
       try {
         const currentInMemory = plans.find(p => p.id === planId);
@@ -416,7 +476,11 @@ function App() {
   }
 
   if (!session) {
-    return <AdminAuth onLogin={() => {}} />;
+    return <AdminAuth onLogin={(localSession) => {
+      if (localSession) {
+        setSession(localSession);
+      }
+    }} />;
   }
 
   return (
