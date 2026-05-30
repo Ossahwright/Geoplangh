@@ -230,6 +230,13 @@ function App() {
         fusedProfile.district
       );
       
+      console.log("PLAN SAVE CHECK", {
+        roads: osmData?.ways?.filter(w => w.type === "highway").length || 0,
+        buildings: osmData?.ways?.filter(w => w.type === "building").length || 0,
+        nodes: osmData?.nodes?.length || 0,
+        hasOSM: !!osmData
+      });
+
       const newPlan: SitePlan = {
         id: uuidv4(),
         createdAt: new Date().toISOString(),
