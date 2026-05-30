@@ -187,7 +187,7 @@ export const SitePlanPreview = forwardRef<HTMLDivElement, SitePlanPreviewProps>(
                     </g>
 
                     {/* Detailed Road / Street Layout from OSM */}
-                    {plan.osmData && (plan.osmData.ways || []).length > 0 ? (
+                    {true ? (
                       <g opacity="1.0">
                         {(plan.osmData.ways || []).map(way => {
                           const points = (way.points || []).map(pt => {
@@ -302,6 +302,28 @@ export const SitePlanPreview = forwardRef<HTMLDivElement, SitePlanPreviewProps>(
                       </g>
                     )}
 
+                    {/* Landmark Marker */}
+                    {plan.nearbyLandmark && (
+                      <g>
+                        <circle
+                          cx={(minE + maxE)/2 + padding*0.35}
+                          cy={mapY((minN + maxN)/2 + padding*0.25)}
+                          r={(vMaxX-vMinX)/120}
+                          fill="#f59e0b"
+                          stroke="black"
+                          strokeWidth={(vMaxX-vMinX)/400}
+                        />
+                        <text
+                          x={(minE + maxE)/2 + padding*0.38}
+                          y={mapY((minN + maxN)/2 + padding*0.28)}
+                          fontSize={(vMaxX-vMinX)/55}
+                          fontWeight="bold"
+                          fill="black"
+                        >
+                          {plan.nearbyLandmark}
+                        </text>
+                      </g>
+                    )}
                     {/* The Plot Polygon - EDGED PINK/LIGHT RED */}
                     <polygon 
                       points={safePillars.map(p => `${p?.easting || 0},${mapY(p?.northing || 0)}`).join(' ')} 
@@ -387,6 +409,9 @@ export const SitePlanPreview = forwardRef<HTMLDivElement, SitePlanPreviewProps>(
                     {plan.surveyZone && (
                       <div className="flex justify-between border-b border-zinc-200 pb-1"><span>Surv. Zone:</span> <span className="text-right text-black truncate ml-2 max-w-[120px]">{plan.surveyZone}</span></div>
                     )}
+                    <div className="flex justify-between border-b border-zinc-200 pb-1"><span>OSM Roads:</span><span>{plan.osmData?.ways?.filter(w => w.type === "highway").length || 0}</span></div>
+                    <div className="flex justify-between border-b border-zinc-200 pb-1"><span>OSM Buildings:</span><span>{plan.osmData?.ways?.filter(w => w.type === "building").length || 0}</span></div>
+                    <div className="flex justify-between border-b border-zinc-200 pb-1"><span>OSM POIs:</span><span>{plan.osmData?.nodes?.length || 0}</span></div>
                     <div className="flex justify-between pb-1"><span>Road:</span> <span className="text-right text-black truncate ml-2 max-w-[120px]">{plan.streetName || "N/A"}</span></div>
                  </div>
               </div>
