@@ -25,12 +25,7 @@ export async function fetchOSMData(lat: number, lng: number, radius: number = 30
     }
     
     const data = await response.json();
-    const processed = processOverpassData(data);
-    console.log("OSM FETCH RESULT", {
-      ways: processed.ways.length,
-      nodes: processed.nodes.length
-    });
-    return processed;
+    return processOverpassData(data);
   } catch (err) {
     console.error("Failed to fetch OSM data", err);
     return null;

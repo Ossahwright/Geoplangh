@@ -184,13 +184,6 @@ function App() {
       
       // Let the Fused GeoIntelligence Engine coordinate everything (Steps 1 to 13)
       const fusedProfile = await FusedGeoIntelligenceEngine.resolve(finalGps);
-      console.log("FUSED LOCATION", {
-        lat: fusedProfile.lat,
-        lng: fusedProfile.lng,
-        locality: fusedProfile.locality,
-        district: fusedProfile.district
-      });
-
       
       // Fetch OSM Data around the final coordinates for local interactive map overlays and pillar alignment
       const { fetchOSMData } = await import('./services/osmService');
@@ -225,21 +218,6 @@ function App() {
         accessPathType: fusedProfile.accessPathType,
         nearbyLandmark: fusedProfile.nearbyLandmark
       });
-      const generatedContext = {
-        roads: [
-          { name: fusedProfile.streetName || "Main Road" },
-          { name: "Access Road" }
-        ],
-        buildings: [
-          { name: "Residential Block A" },
-          { name: "Residential Block B" },
-          { name: "Commercial Structure" }
-        ],
-        landmarks: [
-          { name: fusedProfile.nearbyLandmark || "Community Landmark" }
-        ]
-      };
-
       
       // MMDA GIS Enrichment Pipeline
       const enrichment = enrichWithMMDAGIS(
@@ -252,13 +230,6 @@ function App() {
         fusedProfile.district
       );
       
-      console.log("PLAN SAVE CHECK", {
-        roads: osmData?.ways?.filter(w => w.type === "highway").length || 0,
-        buildings: osmData?.ways?.filter(w => w.type === "building").length || 0,
-        nodes: osmData?.nodes?.length || 0,
-        hasOSM: !!osmData
-      });
-
       const newPlan: SitePlan = {
         id: uuidv4(),
         createdAt: new Date().toISOString(),
@@ -293,8 +264,6 @@ function App() {
           authoritativeSource: fusedProfile.engineeringMetadata.authoritativeSource,
           spatialMemoryState: fusedProfile.engineeringMetadata.spatialMemoryState
         },
-        generatedContext,
-
         userId: session?.uid || 'anonymous'
       };
 
@@ -417,51 +386,49 @@ function App() {
     if (!previewRef.current || !targetPlan) return;
     try {
       setIsExporting(true);
-      // Brief timeout to ensure state update renders before freezing main thread via html-to-image
+      // Brief timeout to ensure layout updates apply before cloning
       await new Promise(resolve => setTimeout(resolve, 300)); 
       
       const element = previewRef.current;
-      const parent = element.parentElement;
-      const originalScale = parent?.style.transform;
-      const originalTransition = parent?.style.transition;
       
-      const scrollParent = element.closest('.overflow-y-auto');
-      const originalScroll = scrollParent?.scrollTop || 0;
+      // Clone the element to render 1:1 on document.body without parent scaling or negative margin clipping
+      const clone = element.cloneNode(true) as HTMLDivElement;
       
-      if (parent) {
-        parent.style.transition = 'none';
-        parent.style.transform = 'scale(1)';
-      }
-      if (scrollParent) {
-        scrollParent.scrollTop = 0;
-      }
+      // Force native styles on the clone to ensure perfect, unscaled, non-overflow-clipped rendering
+      clone.style.position = 'absolute';
+      clone.style.top = '0px';
+      clone.style.left = '0px';
+      clone.style.width = '794px';
+      clone.style.height = '1123px';
+      clone.style.transform = 'none';
+      clone.style.transition = 'none';
+      clone.style.margin = '0';
+      clone.style.zIndex = '-9999';
+      clone.style.opacity = '1';
+      clone.style.visibility = 'visible';
       
-      // another small timeout to let the DOM apply the scroll/scale reset before html-to-image reads it
-      await new Promise(resolve => setTimeout(resolve, 100));
+      document.body.appendChild(clone);
       
-      const imgData = await toJpeg(element, { 
-        quality: 0.95, 
-        pixelRatio: 2,
-        backgroundColor: '#ffffff',
-        width: 794,
-        height: 1123,
-        style: {
-          transform: 'none',
-          transformOrigin: 'top left',
-          margin: '0',
-          position: 'static'
-        }
-      });
+      // Wait another brief moment for the browser to register the cloned DOM subtree
+      await new Promise(resolve => setTimeout(resolve, 200));
       
-      if (scrollParent) {
-        scrollParent.scrollTop = originalScroll;
-      }
-      if (parent) {
-        parent.style.transform = originalScale || '';
-        // restore transition after a tiny delay so it doesn't animate back wildly
-        setTimeout(() => {
-          parent.style.transition = originalTransition || '';
-        }, 50);
+      let imgData = '';
+      try {
+        imgData = await toJpeg(clone, { 
+          quality: 0.95, 
+          pixelRatio: 2,
+          backgroundColor: '#ffffff',
+          width: 794,
+          height: 1123,
+          style: {
+            transform: 'none',
+            transformOrigin: 'top left',
+            margin: '0',
+            position: 'static'
+          }
+        });
+      } finally {
+        document.body.removeChild(clone);
       }
       
       // A4 format: 210 x 297 mm

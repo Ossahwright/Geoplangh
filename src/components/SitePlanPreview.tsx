@@ -26,13 +26,6 @@ export const SitePlanPreview = forwardRef<HTMLDivElement, SitePlanPreviewProps>(
     const centerEasting = safePillars.reduce((sum, p) => sum + (p?.easting || 0), 0) / safePillars.length;
     const centerNorthing = safePillars.reduce((sum, p) => sum + (p?.northing || 0), 0) / safePillars.length;
     const [centerLat, centerLon] = plan?.lat && plan?.lng ? [plan.lat, plan.lng] : (plan?.ghanaPostGPS ? getLatLngFromGPS(plan.ghanaPostGPS) : [5.6037, -0.1870]);
-    console.log("PLAN OSM DATA", {
-      ways: plan.osmData?.ways?.length || 0,
-      nodes: plan.osmData?.nodes?.length || 0,
-      sampleWay: plan.osmData?.ways?.[0],
-      sampleNode: plan.osmData?.nodes?.[0]
-    });
-
     
     const minE = Math.min(...safePillars.map(p => p?.easting || 0));
     const maxE = Math.max(...safePillars.map(p => p?.easting || 0));
@@ -187,7 +180,7 @@ export const SitePlanPreview = forwardRef<HTMLDivElement, SitePlanPreviewProps>(
                     </g>
 
                     {/* Detailed Road / Street Layout from OSM */}
-                    {true ? (
+                    {plan.osmData && (plan.osmData.ways || []).length > 0 ? (
                       <g opacity="1.0">
                         {(plan.osmData.ways || []).map(way => {
                           const points = (way.points || []).map(pt => {
