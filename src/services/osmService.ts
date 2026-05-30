@@ -14,7 +14,7 @@ export async function fetchOSMData(lat: number, lng: number, radius: number = 30
   `;
 
   try {
-    const response = await fetch('https://overpass.kumi.systems/api/interpreter', {
+    const response = await fetch('https://overpass-api.de/api/interpreter', {
       method: 'POST',
       body: overpassQuery,
     });
@@ -25,7 +25,12 @@ export async function fetchOSMData(lat: number, lng: number, radius: number = 30
     }
     
     const data = await response.json();
-    return processOverpassData(data);
+    const processed = processOverpassData(data);
+    console.log("OSM FETCH RESULT", {
+      ways: processed.ways.length,
+      nodes: processed.nodes.length
+    });
+    return processed;
   } catch (err) {
     console.error("Failed to fetch OSM data", err);
     return null;
