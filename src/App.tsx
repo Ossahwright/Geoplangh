@@ -184,6 +184,13 @@ function App() {
       
       // Let the Fused GeoIntelligence Engine coordinate everything (Steps 1 to 13)
       const fusedProfile = await FusedGeoIntelligenceEngine.resolve(finalGps);
+      console.log("FUSED LOCATION", {
+        lat: fusedProfile.lat,
+        lng: fusedProfile.lng,
+        locality: fusedProfile.locality,
+        district: fusedProfile.district
+      });
+
       
       // Fetch OSM Data around the final coordinates for local interactive map overlays and pillar alignment
       const { fetchOSMData } = await import('./services/osmService');
@@ -218,6 +225,21 @@ function App() {
         accessPathType: fusedProfile.accessPathType,
         nearbyLandmark: fusedProfile.nearbyLandmark
       });
+      const generatedContext = {
+        roads: [
+          { name: fusedProfile.streetName || "Main Road" },
+          { name: "Access Road" }
+        ],
+        buildings: [
+          { name: "Residential Block A" },
+          { name: "Residential Block B" },
+          { name: "Commercial Structure" }
+        ],
+        landmarks: [
+          { name: fusedProfile.nearbyLandmark || "Community Landmark" }
+        ]
+      };
+
       
       // MMDA GIS Enrichment Pipeline
       const enrichment = enrichWithMMDAGIS(
@@ -271,6 +293,8 @@ function App() {
           authoritativeSource: fusedProfile.engineeringMetadata.authoritativeSource,
           spatialMemoryState: fusedProfile.engineeringMetadata.spatialMemoryState
         },
+        generatedContext,
+
         userId: session?.uid || 'anonymous'
       };
 

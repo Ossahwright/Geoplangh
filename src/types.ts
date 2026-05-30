@@ -40,6 +40,12 @@ export interface SitePlan {
     authoritativeSource?: string;
     spatialMemoryState?: string;
   };
+  generatedContext?: {
+    roads: { name: string }[];
+    buildings: { name: string }[];
+    landmarks: { name: string }[];
+
+  };
   osmData?: {
     ways: Array<{ id: number; type: string; name?: string; points: Array<[number, number]> }>;
     nodes: Array<{ id: number; type: string; name?: string; lat: number; lon: number }>;
